@@ -1,13 +1,3 @@
----
-id: 0g-labs
-sidebar_position: 1
-title: 0G
-tags:
-  - Guide
-  - 0g
-  - 0g Labs
-  - Testnet
----
 
 # 0G
 
