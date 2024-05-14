@@ -187,8 +187,8 @@ EOF
 ```
 
 ## Enabling and starting the service
+### You need to inspect logs visually after the  to make sure that it is working
 ```bash
-# You need to inspect logs visually after the  to make sure that it is working
 sudo systemctl daemon-reload
 sudo systemctl enable wardend
 sudo systemctl start 0gchaind
