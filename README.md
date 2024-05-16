@@ -183,7 +183,9 @@ EOF
 
 ## Resetting and downloading latest snap
 ```bash
-# Will be added
+sudo apt install liblz4-tool
+0gchaind tendermint unsafe-reset-all --home $HOME/.0gchain --keep-addr-book
+curl -L http://37.120.189.81/0g_testnet/0g_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.0gchain
 ```
 
 ## Enabling and starting the service
@@ -196,7 +198,7 @@ sudo systemctl start 0gchaind
 
 ## Checking logs
 ```bash
-sudo systemctl restart wardend && sudo journalctl -u wardend -f
+sudo journalctl -u 0gchaind.service -f --no-hostname -o cat
 ```
 
 ## Wallet 
